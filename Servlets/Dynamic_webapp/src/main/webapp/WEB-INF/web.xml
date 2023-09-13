@@ -1,0 +1,60 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>archetype created web application</display-name>
+
+
+
+<context-param>
+<param-name>Email</param-name>
+<param-value>aarthim1902@gmail.com</param-value>
+</context-param>
+<servlet>
+		<servlet-name>servletconfig1</servlet-name>
+		<servlet-class>org.edu.servlet_config.Servletconfig1</servlet-class>
+		<init-param>
+			<param-name>Email</param-name>
+			<param-value>aarthim1902@gmail.com</param-value>
+		</init-param>
+
+	</servlet>
+	
+	
+	
+	<servlet>
+		<servlet-name>servlet1</servlet-name>
+		<servlet-class>org.edu.servlet_context.Servlet1</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>servlet2</servlet-name>
+		<servlet-class>org.edu.servlet_context.Servlet2</servlet-class>
+   </servlet>
+    <servlet-mapping>
+		<servlet-name>servlet1</servlet-name>
+		<url-pattern>/servlet1</url-pattern>
+	 </servlet-mapping>
+   <servlet-mapping>
+		<servlet-name>servlet2</servlet-name>
+		<url-pattern>/servlet2</url-pattern>
+	</servlet-mapping>
+     
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+</web-app>
